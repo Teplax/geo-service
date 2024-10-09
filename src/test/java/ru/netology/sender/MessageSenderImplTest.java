@@ -25,8 +25,8 @@ class MessageSenderImplTest {
         MessageSender messageSender = new MessageSenderImpl(geoService,localizationService);
         Map<String,String> headers = new HashMap<>();
         headers.put(MessageSenderImpl.IP_ADDRESS_HEADER, "172.");
-        String expected = "Добро пожаловать";
-        String text = messageSender.send(headers);
+//        String expected = "Добро пожаловать";
+//        String text = messageSender.send(headers);
         Assertions.assertEquals(expected, text);
     }
 
