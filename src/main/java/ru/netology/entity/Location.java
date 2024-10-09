@@ -1,10 +1,6 @@
 package ru.netology.entity;
 
-//import java.util.Objects;
-
 import java.util.Objects;
-
-import static java.util.Objects.*;
 
 public class Location {
 
@@ -45,8 +41,8 @@ public class Location {
         if (o == null || getClass() != o.getClass()) return false;
         Location location = (Location) o;
         return Objects.equals(city, location.getCity())
-                &&(Objects.equals(country,location.getCountry()))
-                &&(Objects.equals(street,location.getStreet()))&&building==location.getBuiling();
+                &&(Objects.equals(country,location.getCountry()))&&(Objects.equals(street,location.getStreet()))
+                &&building==location.getBuiling();
     }
 
     @Override
